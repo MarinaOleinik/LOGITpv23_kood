@@ -1,15 +1,16 @@
 from random import *
 from math import *
+#5
+a=float(input("pikkus: "))
+b=float(input("laius: "))
+d=sqrt(a**2+b**2)
+print("Diagonaal=",d,"m")
+
+
 #4
 u=float(input("Ümbermõõt: ")) #L=pi*2*r=pi*d
 d=round(u/pi,2)
 print("Läbimõõt =",d)
-
-
-
-
-
-
 
 
 #3
@@ -19,7 +20,7 @@ kommid=int(input())
 kokku-=kommid
 print("Nüüd kokku on",kokku)
 
-
+#2
 vanus=18
 eesnimi="Jaak"
 pikkus=16.5
