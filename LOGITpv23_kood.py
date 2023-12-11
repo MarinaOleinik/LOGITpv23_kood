@@ -1,3 +1,34 @@
+from random import *
+from math import *
+#4
+u=float(input("Ümbermõõt: ")) #L=pi*2*r=pi*d
+d=round(u/pi,2)
+print("Läbimõõt =",d)
+
+
+
+
+
+
+
+
+#3
+kokku=randint(1,100)
+print("Laual peal on",kokku,"kommid. Mitu tahad süüa?")
+kommid=int(input())
+kokku-=kommid
+print("Nüüd kokku on",kokku)
+
+
+vanus=18
+eesnimi="Jaak"
+pikkus=16.5
+kas_kaib_koolis=True
+
+print("Muutuja vanus=",vanus,"on", type(vanus))
+print("Muutuja eesnimi=",eesnimi,"on", type(eesnimi))
+
+
 arv1=float(input("Arv1: "))
 t=input("Tehe: ")
 arv2=float(input("Arv2: "))
