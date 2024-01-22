@@ -1,18 +1,62 @@
 from datetime import *
 from random import *
+k=0
+while True:
+    k+=1
+    a=randint(1,50)
+    b=randint(1,50)
+    p=0
+    while p!=3:
+        p+=1
+        v=int(input("Millega võrdub {0}+{1}= ".format(a,b)))
+        if v==a+b:
+            print("Tubli!")
+            break
+        else:
+            print("Mõtle veel!")
+    print("{0}+{1}={2}".format(a,b,a+b))
+    
+    if k==5:break
+
+
+
+
+
+#2 summa 10 arvud
+summa=0
+for i in range(10):
+    arv=float(input("Sisesta arv: "))
+    summa+=arv
+print(summa)
+
+summa=0
+i=0
+while True:
+    i+=1
+    arv=float(input("Sisesta arv: "))
+    summa+=arv
+    if i==10: break
+print(summa)
+
+
+
+#1 Siim
+nimi=input("Mis on sinu nimi?")
+mitu=int(input("Mitu korda tervitada?"))
+for i in range(1,mitu+1):
+    print("Ole tervitatud, "+nimi+", "+str(i)+". korda.")
+
+
 #Komm
-print("1. variandt -while True-")
+print("1. variant -while True-")
 while True:
     v=input("Tahan komme!").lower()
     if v=="komm": break
 
-print("2. variandt -while tingimusega-")
+print("2. variant -while tingimusega-")
 v=""
 while v!="komm":
     v=input("Tahan komme!").lower()
-
-
-
 
 #Nädala päevad
 paevad=["Esmaspäev","Teisipäev","Kolmapäev","Neljapäev","Reede","Laupäev","Pühapäev"]
