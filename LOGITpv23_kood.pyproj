@@ -23,6 +23,7 @@
   <ItemGroup>
     <Compile Include="LOGITpv23_kood.py" />
     <Compile Include="Praktiline_too.py" />
+    <Compile Include="Ruutvõrrand.py" />
     <Compile Include="Valik_laused.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
