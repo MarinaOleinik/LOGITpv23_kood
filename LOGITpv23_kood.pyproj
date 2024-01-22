@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d772a648-64f7-400e-b30f-d5efe087e253</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Praktiline_too.py</StartupFile>
+    <StartupFile>Korduslaused.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Korduslaused.py" />
     <Compile Include="LOGITpv23_kood.py" />
     <Compile Include="Praktiline_too.py" />
     <Compile Include="Ruutvõrrand.py" />

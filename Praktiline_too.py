@@ -40,7 +40,7 @@ except :
 #8 Poes
 arve_nr=datetime.now() # date.today()
 print(arve_nr)
-tsekk="Arve: "+str(arve_nr)+"\nToode Hind Kogus Summa\n"
+tsekk="Arve: "+str(arve_nr)+"\nToode  Hind  Kogus  Summa\n"
 summa=0
 
 toode="Piim"
