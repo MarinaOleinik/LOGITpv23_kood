@@ -1,5 +1,7 @@
 from datetime import *
 from random import *
+#15 
+
 #14 Korrutustabel
 for j in range(1,11):
     for i in range(1,11):
