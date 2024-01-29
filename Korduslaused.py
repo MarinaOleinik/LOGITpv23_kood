@@ -1,5 +1,29 @@
 from datetime import *
 from random import *
+#14 Korrutustabel
+for j in range(1,11):
+    for i in range(1,11):
+        print(f"{j*i:4}",end=" ")
+    print()
+
+#12 Pank
+
+algsumma=float(input("Mis summa paneme panka?"))
+alg=lõppsumma=algsumma
+intress=randint(1,10)
+print(f"Paned panka summa, mis võrdub {algsumma}. Intress on {intress}")
+aastad=int(input("Mitmeks aastaks?"))
+print("Aasta Algsumma Intress Aasta_lõpuks")
+for i in range(1,aastad+1):
+    intsumma=(algsumma*intress)/100
+    lõppsumma=algsumma+intsumma
+    print(f"{i} {algsumma} {intsumma} {lõppsumma}")
+    algsumma=lõppsumma
+print(f"Summa kokku: {lõppsumma} Eur")
+print(f"Kasum: {lõppsumma-alg} Eur")
+
+
+print()
 k=0
 while True:
     k+=1
