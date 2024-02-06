@@ -1,19 +1,37 @@
 nimed=["Mati","Kati","Mati","Mati","Kadri"]
 while True:
-    valik=input("Andmete lisamine-add\nAndmete näitamine-show\nAndmete kustutamine-del\nJärjendi pööramine-rev\nAndmete kustutamine-clear\nAndmete sortimine-sort\nAndmete otsing-ots\n")
+    valik=input("Andmete lisamine-add\nAndmete näitamine-show\nAndmete kustutamine-del\nJärjendi pööramine-rev\nAndmete kustutamine-clear\nAndmete sortimine-sort\nAndmete otsing-ots\n").lower()
     if valik=="add":
-        valik=input("\tKas lisame mitu inimest(mitu) või positsioonile(pos)\n")
+        valik=input("\tKas lisame mitu inimest(mitu) või positsioonile(pos)\n").lower()
         if valik=="mitu":
-            mitu=int(input("Mitu inimest lisame? "))
+            while True:
+                try:
+                    mitu=int(input("Mitu inimest lisame? "))
+                    if mitu>0: 
+                        break
+                    else:
+                        print("On vaja arv suurem kui 0")
+                except:
+                    print("Viga!")
             for i in range(mitu):
-                nimi=input("Sisesta nimi: ")
+                nimi=input("Sisesta nimi: ").capitalize()
                 nimed.append(nimi)
-        else:
-            indeks=int(input("Kuhu lisamine? "))
-            nimi=input("Mis nimi: ")
+        elif valik=="pos":          
+            while True:
+                try:
+                    indeks=int(input("Kuhu lisamine? "))
+                    if indeks>0 and indeks<len(nimed): 
+                        break
+                    else:
+                        print("On vaja arv suurem kui 0 ja väiksem kui elementide kogus")
+                except:
+                    print("Viga!")
+            nimi=input("Mis nimi: ").capitalize()
             nimed.insert(indeks-1,nimi)
+        else:
+            print("Vale valik! Kirjuta (mitu) või (pos) ")
     elif valik=="del":
-        valik=input("Kas kustutame nimi(nimi) või indeksi järgi(ind)?")
+        valik=input("Kas kustutame nimi(nimi) või indeksi järgi(ind)?").lower()
         if valik=="nimi":
             nimi=input("Mis nimi on vaja kustutada? ")
             kogus=nimed.count(nimi)
