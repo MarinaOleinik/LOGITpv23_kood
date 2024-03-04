@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d772a648-64f7-400e-b30f-d5efe087e253</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>List_.py</StartupFile>
+    <StartupFile>FunktsioonideKasutamine.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,10 +21,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="FunktsioonideKasutamine.py" />
     <Compile Include="Korduslaused.py" />
     <Compile Include="List_.py" />
     <Compile Include="LOGITpv23_kood.py" />
+    <Compile Include="MinuOmaModul.py" />
     <Compile Include="Praktiline_too.py" />
+    <Compile Include="PT2_Listid.py" />
     <Compile Include="Ruutvõrrand.py" />
     <Compile Include="Valik_laused.py" />
   </ItemGroup>
