@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d772a648-64f7-400e-b30f-d5efe087e253</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>FunktsioonideKasutamine.py</StartupFile>
+    <StartupFile>Tkinteri_kasutamine.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -29,7 +29,12 @@
     <Compile Include="Praktiline_too.py" />
     <Compile Include="PT2_Listid.py" />
     <Compile Include="Ruutvõrrand.py" />
+    <Compile Include="Tkinteri_kasutamine.py" />
     <Compile Include="Valik_laused.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="eye.png" />
+    <Content Include="icon.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
