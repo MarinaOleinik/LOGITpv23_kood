@@ -1,15 +1,26 @@
 from tkinter import *
+from tkinter import messagebox as mb
+from tkinter import simpledialog as sd
 
 def tehtudvalik(var):
     f=var.get()
     if f:
         texbox.configure(show="")
+        valik.configure(image=pilt2)
     else:
         texbox.configure(show="*")
+        valik.configure(image=pilt1)
 def textpealkirjasse():
-    t=texbox.get()
-    pealkiri.configure(text=t)
-    texbox.delete(0,END)
+    vastus=mb.askquestion("Küsimus","Kas tõesti tahad info kopeerida?")
+    if vastus=='yes':
+        mb.showwarning("Tähelepanu","Kohe teiseldatakse info!")
+        t=texbox.get()
+        pealkiri.configure(text=t)
+        texbox.delete(0,END)
+    else:
+        mb.showinfo("Valik oli tehtud","Info jääb omal kohal")
+        nimi=sd.askstring("Saame tuttavaks!","Mis on sinu nimi?") #askinteger(),askfloat()
+        pealkiri.configure(text=nimi)
 aken=Tk()
 aken.geometry("500x500")
 aken.title("Akna pealkiri")
@@ -30,10 +41,11 @@ texbox=Entry(raam,
              font="Britannic_Bold 16",
              width=16,
              show="*")
-pilt=PhotoImage(file="eye.png")
+pilt1=PhotoImage(file="eye.png")
+pilt2=PhotoImage(file="closed.png")
 var=BooleanVar() #IntVar(), StringVar()
 valik=Checkbutton(raam,
-                  image=pilt, #text="Punkt1"
+                  image=pilt1, #text="Punkt1"
                   variable=var,
                   onvalue=True,
                   offvalue=False,

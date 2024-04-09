@@ -33,6 +33,7 @@
     <Compile Include="Valik_laused.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="closed.png" />
     <Content Include="eye.png" />
     <Content Include="icon.ico" />
   </ItemGroup>
