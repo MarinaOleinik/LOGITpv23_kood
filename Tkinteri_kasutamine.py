@@ -11,6 +11,7 @@ def tehtudvalik(var):
         texbox.configure(show="*")
         valik.configure(image=pilt1)
 def textpealkirjasse():
+
     vastus=mb.askquestion("Küsimus","Kas tõesti tahad info kopeerida?")
     if vastus=='yes':
         mb.showwarning("Tähelepanu","Kohe teiseldatakse info!")
@@ -25,7 +26,7 @@ aken=Tk()
 aken.geometry("500x500")
 aken.title("Akna pealkiri")
 aken.configure(bg="#13e0eb")
-aken.iconbitmap("icon.ico")
+#aken.iconbitmap("icon.ico")
 pealkiri=Label(aken,
                text="Põhielemendid",
                bg="#9edb8f",

@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d772a648-64f7-400e-b30f-d5efe087e253</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Tkinteri_kasutamine.py</StartupFile>
+    <StartupFile>V.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -30,6 +30,7 @@
     <Compile Include="PT2_Listid.py" />
     <Compile Include="Ruutvõrrand.py" />
     <Compile Include="Tkinteri_kasutamine.py" />
+    <Compile Include="V.py" />
     <Compile Include="Valik_laused.py" />
   </ItemGroup>
   <ItemGroup>
