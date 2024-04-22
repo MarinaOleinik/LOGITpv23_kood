@@ -19,17 +19,14 @@ def autoriseerimine():
     s=sal.get()
     kasutajad=loe_failist("kasutajad.txt")
     salasõna=loe_failist("salasõna.txt")
-    p=0
-    while True:
-        if k in kasutajad:           
-            try:
-                if kasutajad.index(k)==salasõna.index(s):
-                    pealkiri.configure(text=k+", Tere tulemast!")
-                    break
-            except:
-                print("Ei ole Ok!")
-        else:
-            print("Kasutajad pole")
+    if k in kasutajad:           
+        try:
+            if kasutajad.index(k)==salasõna.index(s):
+                pealkiri.configure(text=k+", Tere tulemast!")
+        except:
+            pealkiri.configure(text=k+", Sina ei ole süsteemis!")
+    else:
+        print("Kasutajad pole")
 def loe_failist(fail:str)->list:
     """Funktsioon loeb tekst *.txt failist
     """

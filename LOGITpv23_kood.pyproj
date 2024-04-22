@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>d772a648-64f7-400e-b30f-d5efe087e253</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>V.py</StartupFile>
+    <StartupFile>Graafik.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="FunktsioonideKasutamine.py" />
+    <Compile Include="Graafik.py" />
     <Compile Include="Korduslaused.py" />
     <Compile Include="List_.py" />
     <Compile Include="LOGITpv23_kood.py" />
