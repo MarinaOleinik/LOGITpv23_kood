@@ -24,18 +24,15 @@ def Vaal():
     plt.show()
 
 def valik(event):
-    n=loetelu.get(loetelu.curselection())
-    
-    print(n)
-    if n=="Vaal":
-        Vaal()
+    eval(f"{loetelu.get(loetelu.curselection())}()")
+
     
 aken=Tk()
 aken.geometry("400x500")
 aken.title("Akna pealkiri")
 aken.configure(bg="#13e0eb")
 l=["Vaal","Vihmavari","Liblikas","Prillid","Kilpkonn"]
-loetelu=Listbox(aken,font="Arial 30",fg="green",bg="gold",selectborderwidth=3)
+loetelu=Listbox(aken,font="Arial 30",fg="green",bg="gold",selectborderwidth=3,selectbackground="lightblue")
 for i in range(len(l)):
     loetelu.insert(i,l[i])
 
